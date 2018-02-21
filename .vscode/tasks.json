@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CustomerManagementReactWebAPI.Web/CustomerManagementReactWebAPI.Web.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

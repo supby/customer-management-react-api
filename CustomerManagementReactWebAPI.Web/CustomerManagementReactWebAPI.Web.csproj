@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerManagementReactWebAPI.Interfaces\CustomerManagementReactWebAPI.Interfaces.csproj" />
+    <ProjectReference Include="..\CustomerManagementReactWebAPI.Models\CustomerManagementReactWebAPI.Models.csproj" />
+    <ProjectReference Include="..\CustomerManagementReactWebAPI.Persistence\CustomerManagementReactWebAPI.Persistence.csproj" />
+    <ProjectReference Include="..\CustomerManagementReactWebAPI.Services\CustomerManagementReactWebAPI.Services.csproj" />
+    <Content Include="ClientApp\index.js" />
+    <Content Include="ClientApp\store\index.js" />
+    <Content Include="ClientApp\store\reducer\index.js" />
+    <Content Include="ClientApp\components\home.js" />
+    <Content Include="ClientApp\store\actions\index.js" />
+    <Content Include="ClientApp\components\row.js" />
+  </ItemGroup>
+</Project>
